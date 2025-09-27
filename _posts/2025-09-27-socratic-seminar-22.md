@@ -30,9 +30,8 @@ sponsor [Btrust](http://btrust.tech/) for food and refreshments.
 
 MC: Brandon
 
-- [Provable Cryptography for Bitcoin](https://delvingbitcoin.org/t/provable-cryptography-for-bitcoin-an-introduction-workbook/1974)
-- [Analyzing Bitcoin consensus risks in protocol upgrades](https://bitcoin-cap.github.io/bcap/#analyzing-bitcoin-consensus-risks-in-protocol-upgrades)
-- [Zero Knowledge Proof of Reserves](https://github.com/AbdelStark/zkpoor)
+- [How to Compile and Test Bitcoin Core v30.0rc1 with CMake](https://gist.github.com/BrandonOdiwuor/6402985be803e161074c25674714166c)
+- [Testing Guide: Bitcoin Core 30.0 Release Candidate](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/30.0-Release-Candidate-Testing-Guide)
 
 MC: Winnie
 
@@ -85,6 +84,7 @@ MC: Sharon
 - [Mastering Bitcoin](https://x.com/dadadevs/status/1969005045329924492?s=46)
 - [Bitcoin Core Principles](https://x.com/btrust_builders/status/1963893611134640489?t=KpyN0EWlBkV68VIGygxAsA&s=19)
 - [Africa Bitcoin Conference 4th Edition](https://x.com/AfroBitcoinOrg/status/1899747297958740126)
+- [ Splice Africa acquired by Tando](https://x.com/Vlad_kwasi/status/1970347757761122601)
 
 ---
 
