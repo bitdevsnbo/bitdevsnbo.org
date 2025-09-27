@@ -37,6 +37,10 @@ MC: Winnie
 
 - [Getting Started with Warnet](https://github.com/bitcoin-dev-project/warnet-demo-project)
 
+MC: Fidel
+
+- [SegWit](https://learnmeabitcoin.com/beginners/guide/segwit/)
+
 ## Design
 
 ---
@@ -83,8 +87,8 @@ MC: Sharon
 
 - [Mastering Bitcoin](https://x.com/dadadevs/status/1969005045329924492?s=46)
 - [Bitcoin Core Principles](https://x.com/btrust_builders/status/1963893611134640489?t=KpyN0EWlBkV68VIGygxAsA&s=19)
-- [Africa Bitcoin Conference 4th Edition](https://x.com/AfroBitcoinOrg/status/1899747297958740126)
-- [ Splice Africa acquired by Tando](https://x.com/Vlad_kwasi/status/1970347757761122601)
+- [Btrust Developer Day](https://devday.btrust.tech/)
+- [Splice Africa acquired by Tando](https://x.com/Vlad_kwasi/status/1970347757761122601)
 
 ---
 
