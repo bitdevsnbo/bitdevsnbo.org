@@ -1,18 +1,31 @@
-$background-light: #ffffff;
-$font-light: #000000;
-$primary-color-light: #ff7f00;
+@use './variables' as vars;
 
-$background-dark: #000000;
-$font-dark: #ffffff;
-$primary-color-dark: #ff7f00;
+$large-screen: 1100px !default;
+$mid-screen: 800px !default;
+$small-screen: 480px !default;
 
+:root {
+  /* light theme defaults */
+  --background-color: #ffffff;
+  --font-color: #000000;
+  --primary-color: #F7931A;
+  --link-hover-color: lighten(#F7931A, 10%);
+}
 
-html, body {
-  font-family: $body-font;
+/* dark theme runtime overrides */
+body.dark-mode {
+  --background-color: #000000;
+  --font-color: #ffffff;
+  --primary-color: #F7931A;
+}
+
+html,
+body {
+  font-family: vars.$body-font;
   font-size: 16px;
   line-height: 1.5;
-  background-color: $background-color;
-  color: $font-color;
+  background-color: var(--background-color);
+  color: var(--font-color);
 
   transition: background-color 0.4s ease, color 0.4s ease;
 
@@ -27,41 +40,42 @@ html, body {
   @media (max-width: $small-screen) {
     font-size: 12px;
   }
+
+  /* ✅ Ensures each page fills the viewport height */
+  min-height: 100vh;
+
+  /* Helps prevent layout shift when footer is short */
+  display: flex;
+  flex-direction: column;
 }
 
-
+/* ✅ Make sure the body expands correctly for content and footer */
 body {
-  background-color: $background-light;
-  color: $font-light;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  flex: 1; /* allow content area to grow */
+  box-sizing: border-box;
 }
 
 a {
-  color: $primary-color-light;
+  color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
 
   &:hover {
-    color: lighten($primary-color-light, 10%);
+    color: var(--link-hover-color, var(--primary-color));
   }
 }
 
-body.dark-mode {
-  background-color: $background-dark;
-  color: $font-dark;
-}
-
-body.dark-mode a {
-  color: $primary-color-dark;
-
-  &:hover {
-    color: lighten($primary-color-dark, 10%);
-  }
-}
-
+/* ✅ Keeps layout centered and responsive */
 .Site {
   max-width: 880px;
   margin: 0 auto;
   padding: 2rem;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  flex: 1; /* fills remaining height between header and footer */
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 p {
@@ -98,4 +112,12 @@ h4 {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+* {
+  transition: none !important;
+}
+
+body.loaded * {
+  transition: all 0.1s ease;
 }

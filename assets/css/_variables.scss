@@ -1,26 +1,13 @@
----
----
-
 // Typography
+$body-font: 'Source Code Pro', monospace !default;
 $base-font-size: 16px !default;
 
 // Colors
 $background-color: #000000 !default;   // black
 $font-color: #ffffff !default;         // white
-$primary-color: #F7931A !default;      // orange
-
+$primary-color: #FFA500 !default;      // orange
 
 // Screen size for responsiveness
 $small-screen: 400px !default;
 $mid-screen: 768px !default;
 $large-screen: 1024px !default;
-
-@use './variables' as vars;
-
-@use './reset';
-@use './global';
-@use './header';
-@use './footer';
-@use './home';
-@use './post';
-@use './blog';
