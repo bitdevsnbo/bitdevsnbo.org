@@ -30,10 +30,13 @@ sponsor [Btrust](http://btrust.tech/) for food and refreshments.
 
 MC: Brandon
 
-- [BIP 54: Consensus Cleanup softfork](https://bips.dev/54/) — fixes 4 long-standing bugs: timewarp attack, expensive block validation, 64-byte tx merkle ambiguity, and duplicate coinbase txs. Recently merged into Bitcoin Inquisition for testing.
+- [Bitcoin core v31.0 Testing](https://github.com/bitcoin/bitcoin/issues/34840)
+  - [31.0 Release Notes Draft](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/31.0-Release-Notes-Draft)
+  - [31.0 Release Candidate Testing Guide](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/31.0-Release-Candidate-Testing-Guide)
 - [Bitcoin Core development activity up 35%](https://www.theblock.co/post/384208/bitcoin-core-sees-development-uptick-reversing-multi-year-decline-casa-cso) — reversal of the multi-year decline
 - [BIP 360: Quantum-resistant addresses (P2MR) live on testnet](https://thequantuminsider.com/2026/03/20/btq-technologies-implements-bip-360-quantum-resistant-bitcoin-transactions-testnet/) — BTQ Technologies deployed March 20; BIP360 merged Feb 11
   - [Google is accelerating its quantum timeline](https://www.dlnews.com/articles/markets/google-new-date-quantum-reckoning-bitcoin-ethereum-dev-prepare/)
+- [TUI for Bitcoin Core released: Bitcoin-tui, a terminal interface for Bitcoin Core](https://x.com/_jan__b/status/2031741548098896272)
 
 ### Mining
 
