@@ -19,7 +19,7 @@ highlight_code = true
 
 generate_feed = true
 
-feed_filename = "rss.xml"
+feed_filename = "feed.xml"
 
 [extra]
 # Put all your custom variables here

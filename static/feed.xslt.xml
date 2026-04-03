@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
+  <xsl:template match="/">
+    <html>
+      <head>
+        <title><xsl:value-of select="atom:feed/atom:title"/> - RSS Feed</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"/>
+        <style>
+          body {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #FFF;
+            color: #333;
+            margin: 0;
+          }
+          @media (max-width: 1024px) { body { font-size: 14px; } }
+          @media (max-width: 768px)  { body { font-size: 13px; } }
+          @media (max-width: 400px)  { body { font-size: 12px; } }
+          .Site {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 2rem;
+          }
+          a {
+            color: #FF9900;
+            text-decoration: none;
+          }
+          a:hover {
+            color: rgba(255, 153, 0, 0.8);
+          }
+          .Header {
+            margin-bottom: 0.75rem;
+          }
+          .Header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .Header-logo {
+            font-size: 2.2rem;
+          }
+          .Header-logo a {
+            color: #333;
+          }
+          .Header-border {
+            opacity: 0.4;
+            margin-top: 0.4rem;
+            overflow: hidden;
+          }
+          h1 {
+            font-size: 1.6rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+          }
+          p {
+            margin-bottom: 1rem;
+          }
+          .feed-intro {
+            margin: 1rem 0 2rem;
+          }
+          .feed-url {
+            background: #f5f5f5;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            word-break: break-all;
+          }
+          .entry {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+          }
+          .entry-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+          }
+          .entry-date {
+            color: #999;
+            font-size: 0.9rem;
+          }
+          .Footer {
+            margin-top: 2rem;
+          }
+          .Footer-border {
+            opacity: 0.4;
+            margin-bottom: 1em;
+            overflow: hidden;
+          }
+          .Footer-inner {
+            display: flex;
+            justify-content: space-between;
+          }
+          .Footer-inner a {
+            color: #333;
+            opacity: 0.4;
+          }
+          .Footer-inner a:hover {
+            color: #FF9900;
+            opacity: 1;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="Site">
+          <header class="Header">
+            <div class="Header-inner">
+              <div class="Header-logo">
+                <a href="/"><xsl:value-of select="atom:feed/atom:title"/></a>
+              </div>
+            </div>
+            <div class="Header-border">==============================================================================================================================================================</div>
+          </header>
+
+          <h1>RSS Feed</h1>
+          <p class="feed-intro">
+            This is the <xsl:value-of select="atom:feed/atom:title"/> Atom feed.
+            Subscribe by copying the URL below into your RSS reader.
+          </p>
+          <div class="feed-url">
+            <xsl:value-of select="atom:feed/atom:link[@rel='self']/@href"/>
+          </div>
+
+          <xsl:for-each select="atom:feed/atom:entry">
+            <div class="entry">
+              <div class="entry-title">
+                <a>
+                  <xsl:attribute name="href">
+                    <xsl:value-of select="atom:link/@href"/>
+                  </xsl:attribute>
+                  <xsl:value-of select="atom:title"/>
+                </a>
+              </div>
+              <div class="entry-date">
+                <xsl:value-of select="substring(atom:published, 0, 11)"/>
+              </div>
+            </div>
+          </xsl:for-each>
+
+          <footer class="Footer">
+            <div class="Footer-border">==============================================================================================================================================================</div>
+            <div class="Footer-inner">
+              <a href="/"><xsl:value-of select="atom:feed/atom:title"/></a>
+            </div>
+          </footer>
+        </div>
+      </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
