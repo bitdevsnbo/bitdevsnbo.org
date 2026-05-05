@@ -1,6 +1,6 @@
 .Footer {
   margin-top: 2rem;
-  color: $font-color;
+  color: var(--font-color);
   padding: 2rem;
   text-align: center;
 
@@ -9,7 +9,7 @@
     margin-bottom: 1em;
     overflow: hidden;
     user-select: none;
-    color: $font-color;
+    color: var(--font-color);
   }
 
   &-inner {
@@ -19,15 +19,15 @@
     gap: 1rem;
 
     a {
-      color: $primary-color;  // orange
+      color: var(--primary-color);
       opacity: 1;
       text-decoration: none;
       font-weight: 500;
-      transition: opacity 0.2s ease, color 0.2s ease;
+      transition: opacity 0.1s ease, color 0.1s ease;
 
       &:hover {
         opacity: 0.9;
-        color: lighten($primary-color, 10%);
+        color: var(--link-hover-color, var(--primary-color));
       }
     }
   }

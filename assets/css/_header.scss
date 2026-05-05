@@ -1,12 +1,19 @@
+// header.scss
+
+@use 'variables' as vars;
+
 .Header {
   margin-bottom: 0.75rem;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
 
   &-border {
     opacity: 0.3;
     margin-top: 0.4rem;
     overflow: hidden;
     user-select: none;
-    color: $font-color; 
+    color: var(--font-color);
   }
 
   &-inner {
@@ -16,51 +23,62 @@
     padding: 1rem 0;
   }
 
-  &-logo {
-    font-size: 2.2rem;
-    color: $font-color; 
+&-logo {
+  font-size: 2.2rem;
+  color: #F7931A; // static orange color
+  transition: color 0.3s ease;
 
-    @media (max-width: $small-screen) {
-      font-size: 1.8rem;
-    }
+  @media (max-width: vars.$small-screen) {
+    font-size: 1.8rem;
   }
 
-  .theme-toggle {
-  background: none;
-  border: 1px solid $primary-color-dark;
-  color: $primary-color-dark;
-  border-radius: 8px;
-  padding: 0.4rem 0.8rem;
-  cursor: pointer;
-  margin-left: 1.5rem;
-  font-size: 1.1rem;
-  transition: background 0.2s ease, color 0.2s ease;
+  a {
+    color: #F7931A; // ensure link inherits orange color
+    text-decoration: none;
+    transition: color 0.3s ease;
 
-  &:hover {
-    background: $primary-color-dark;
-    color: #000;
+    &:hover {
+      color: darken(#F7931A, 10%); // slightly darker orange on hover
+    }
   }
 }
 
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      background: var(--primary-color);
+      color: var(--background-color); /* stays readable in both modes */
+    }
+  }
 
   &-nav {
     display: flex;
     font-size: 1.3rem;
+    transition: color 0.3s ease;
 
-    @media (max-width: $small-screen) {
+    @media (max-width: vars.$small-screen) {
       font-size: 1.1rem;
     }
 
     a {
-      color: $primary-color; 
+      color: var(--primary-color);
       opacity: 1;
       margin-left: 1.5rem;
       text-decoration: none;
       font-weight: 500;
-      transition: opacity 0.2s ease, color 0.2s ease;
+      transition: opacity 0.1s ease, color 0.1s ease;
 
       &:hover {
-        color: lighten($primary-color, 10%);
+        color: var(--link-hover-color, var(--primary-color));
         opacity: 0.9;
       }
     }

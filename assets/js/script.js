@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("theme-toggle");
   const body = document.body;
 
+  // If the toggleButton doesn't exist, stop gracefully
+  if (!toggleButton) return;
+
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     body.classList.add("dark-mode");
@@ -18,4 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     toggleButton.textContent = isDarkMode ? "☀️" : "🌙";
   });
+
+  window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
 });

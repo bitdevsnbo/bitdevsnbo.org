@@ -1,5 +1,17 @@
 <head>
 
+  <script>
+  // Immediately apply saved theme before styles load
+  (function() {
+    try {
+      const storedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = storedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+
   <title>
     {% if page.title == "Home" %}
       {{ site.data.settings.title }} | {{ site.data.settings.tagline }}
