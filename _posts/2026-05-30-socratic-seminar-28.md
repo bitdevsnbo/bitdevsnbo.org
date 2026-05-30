@@ -30,13 +30,14 @@ sponsor [Btrust](http://btrust.tech/) for food and refreshments.
 
 MC: Brandon
 
-- [CVE-2024-52911: Bitcoin Core Script Interpreter Remote Crash](https://groups.google.com/g/bitcoindev/c/nSAd0UmDSvc) — use-after-free bug in parallel script validation; affects v0.14.0–28.x, fixed in 29.0
+- [TCP hole punching for Bitcoin nodes behind home NATs](https://delvingbitcoin.org/t/tcp-hole-punching-for-bitcoin-nodes-behind-home-nats/2497)
+- [CVE-2024-52911: Bitcoin Core script interpreter remote crash disclosure](https://groups.google.com/g/bitcoindev/c/e1UEdViSYkU) — use-after-free bug in parallel script validation; affects v0.14.0–28.x, fixed in 29.0
+  - [CVE-2024-52911 - Script Interpreter Remote Crash](https://bitcoincore.org/en/2026/05/05/disclose-cve-2024-52911/)
   - [Bitcoin Core #35209](https://github.com/bitcoin/bitcoin/pull/35209) — the covert + formal fix
-- [BIP Proposal: UTXO Set Sharing over P2P Network](https://github.com/bitcoin/bips/pull/1748) — extends assumeUTXO with a new service bit and 4 P2P messages
-  - [Voskuil counter-argument](https://github.com/bitcoin/bips/pull/1748#issuecomment-2800000000) — risks nudging new nodes to trust miners over full chain verification
+- [Fingerprinting nodes: Possible Solutions](https://delvingbitcoin.org/t/fingerprinting-nodes-possible-solutions/2466)
+- [BIP Proposal: UTXO Set Sharing over P2P Network](https://groups.google.com/g/bitcoindev/c/rThmyI8ZN3Q) — extends assumeUTXO with a new service bit and 4 P2P messages
+  - [BIP draft: UTXO set sharing](https://github.com/bitcoin/bips/pull/1748)
 - [BIP-323 merged: 24-bit nVersion nonce space for miners](https://github.com/bitcoin/bips/blob/master/bip-0323.mediawiki) — supersedes BIP-320; reserves bits 5–28 for header-only mining without rolling nTime more than once per second
-- [CTV+CSFS: Can we reach consensus on a first step towards covenants?](https://delvingbitcoin.org/t/ctv-csfs-can-we-reach-consensus-on-a-first-step-towards-covenants/1509) — 81-reply thread still active as of March 2026
-- [BIP Draft: Quantum-Resistant Transition for Dormant P2PKH Addresses](https://groups.google.com/g/bitcoindev/c/FmBCL2cVkEU) — proposed April 2026; relates to ongoing [BIP-360 (P2QRH)](https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki) work
 
 ---
 
