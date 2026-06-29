@@ -11,8 +11,6 @@ html, body {
   font-family: $body-font;
   font-size: 16px;
   line-height: 1.5;
-  background-color: $background-color;
-  color: $font-color;
 
   transition: background-color 0.4s ease, color 0.4s ease;
 
@@ -33,6 +31,7 @@ html, body {
 body {
   background-color: $background-light;
   color: $font-light;
+  min-height: 100vh;
 }
 
 a {
