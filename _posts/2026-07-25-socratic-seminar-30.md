@@ -54,6 +54,10 @@ MC: Sy ⚡
 * [interoperability-tests-sv2: new library for testing Stratum v2 compliance](https://github.com/stratum-mining/interoperability-tests-sv2/issues/1) — verifying compatibility between the SRI reference implementation and other SV2-based software as protocol experimentation grows
 * [Bitcoin Core #34020: transaction lookup methods for the Mining IPC interface](https://github.com/bitcoin/bitcoin/issues/34020) — `getTransactionsByTxID()`/`getTransactionsByWitnessID()` support Stratum v2 custom job declaration, letting pools request only the template transactions they're missing
 
+MC: Nkatha
+
+* [Braidpool - Attempts towards mining decentralization](https://x.com/i/status/2063204362386800944)
+
 ### Lightning Network
 
 ---
@@ -85,6 +89,10 @@ MC: Martin
 MC: Fidel
 
 * [Build with Robin!](https://www.buildwithrobin.xyz/)
+
+MC: Susan
+
+* [SiriScore](https://siriscore.xyz/)
 
 MC: Jodom
 
