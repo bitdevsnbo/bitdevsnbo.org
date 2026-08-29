@@ -30,10 +30,15 @@ A special thank you to our sponsor [Btrust](http://btrust.tech/) for food and re
 
 MC: Brandon
 
-* [Draft BIP for a `rawtr()` output script descriptor](https://groups.google.com/g/bitcoindev/c/CCZN_qQ5C1s) — expresses P2TR outputs by output key alone, useful when the internal key or script tree is unknown or unrevealed
-  + [BIPs repo issue #2251](https://github.com/bitcoin/bips/issues/2251)
+* [BIP 110: Reduced Data Temporary Softfork](https://bips.dev/110/)
+  + [Block 961,632](https://x.com/saylor/status/2086057411056447861)
+  + [WE HAVE FORK-OFF!](https://x.com/mononautical/status/2086174726238654607)
+  + [BIP110 has forked off](https://bip110.orange.surf/live.html)
+* [Quantum Safe Bitcoin tx on mainnet](https://x.com/avihu28/status/2092742315995480266)
 * [Draft BIP for relaying stale block tips between peers](https://groups.google.com/g/bitcoindev/c/AwOPNxF15mU) — opt-in P2P message tracking "stale block rate" to expose validation bottlenecks, partitions, or selfish mining
   + [BIP draft text](https://github.com/pseudoramdom/bips/blob/staletip-bip-draft/bip-staletip.md)
+* [HWI repository to enter maintenance mode](https://github.com/bitcoin-core/HWI/issues/850)
+* [Static Bitcoin Core binaries available for testing](https://groups.google.com/g/bitcoindev/c/UgGHs-_YGvw)
 
 MC: Frank
 
