@@ -94,7 +94,17 @@ MC: Isaack Njama
 MC: Martin
 
 * [Fedimint v0.13.0](https://github.com/fedimint/fedimint/releases/tag/v0.13.0)
-* [Nutshell 0.22.0](https://github.com/cashubtc/nutshell/releases/tag/0.22.0)
+* [Nutshell 0.22.0: BIP-39 mint seeds](https://github.com/cashubtc/nutshell/releases/tag/0.22.0)
+* [Cashu v3 spec reorg: root NUTs now describe v3, old spec moved to `legacy/`](https://github.com/cashubtc/nuts/pull/469)
+* [cashu-ts v4.13.1: hardening P2PK locks and payment requests](https://github.com/cashubtc/cashu-ts/releases/tag/v4.13.1)
+
+### Community Announcements
+
+---
+
+MC: Sharon
+
+* [Btrust Grants](https://x.com/btrustteam/status/2125170725367488987)
 
 ---
 
